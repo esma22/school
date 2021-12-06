@@ -23,5 +23,10 @@
     "webpack": "^5.64.4",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "font-awesome": "^4.7.0",
+    "jquery-validation": "^1.19.2"
   }
 }

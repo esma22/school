@@ -1,3 +1,704 @@
-.navbar-header a img{
-    font-size: 10px !important;
+@font-face {
+    font-family: 'JF Flat Regular';
+    src: url(../fonts/JF-Flat-regular.eot);
+    src: url(../fonts/JF-Flat-regular.eot?iefix) format('embedded-opentype'), url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'), url(../fonts/JF-Flat-regular.woff) format('woff'), url(../fonts/JF-Flat-regular.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+  }
+  body {
+    font-family: "JF Flat Regular", 'Seoge UI', 'Segoe UI', Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.429;
+    overflow-x: hidden !important;
+  }
+  #navBar{
+    border-bottom: #eef0ea !important;
+    background-color: #fff;
+  }
+  
+.navbar .navbar-collapse ul li a{
+  color: #007187;
+  font-size: 15px;
+  line-height: 40px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 10px;
+}
+.navbar .login
+{
+  color: #fff;
+  font-size: 15px;
+  line-height: 40px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: 1px solid #004157;
+  border-radius: 15px;
+  background-color: #004157;
+}
+a{
+  color: #000;
+  text-decoration: none !important;
+}
+a:hover{
+  color: #004157;
+}
+.navbar .account{
+  color: #fff;
+  font-size: 15px;
+  line-height: 40px;
+  padding-right: 15px !important;
+  padding-left: 25px !important;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: 1px solid #004157;
+  border-radius: 15px;
+  background-color: #004157;
+  margin-left: 10px;
+  
+}
+
+nav.navbar button.navbar-toggler span {
+  color: #007187 !important;
+}
+button{
+  background-color: transparent !important;
+  color: #004157 !important;
+  border-color: #004157 !important;
+}
+button:hover{
+  color: #fff !important;
+  background-color: #004157 !important;
+}
+.modal .modal-header .close:hover{
+  color: #004157 !important;
+  background-color: transparent !important;
+}
+input.form-control:focus,
+button:focus
+{
+box-shadow: none !important;
+}
+/*****************************
+sliders
+*****************************/
+#carouselExampleIndicators .carousel-inner .carousel-item img{
+  height: 600px !important;
+  width: 1500px !important;
+}
+#carouselExampleIndicators .carousel-inner .carousel-caption h1{
+  text-align: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h1{
+  margin-top: 100px ;
+  font-size: 55px !important;
+  margin-bottom:10px;
+}
+#carouselExampleIndicators .carousel-inner .carousel-caption p{
+  font-size: 20px;
+}
+#carouselExampleIndicators .carousel-control-prev,
+#carouselExampleIndicators .carousel-control-next{
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  width: 30px;
+  height: 100px;
+  font-size: 20px;
+  padding: 30px 20px;
+  position: absolute;
+  transform: translateY(300%);
+  
+}
+#carouselExampleIndicators .carousel-control-prev{
+  right: 20px;
+}
+#carouselExampleIndicators .carousel-control-next{
+  left: 20px;
+}
+/*************************
+activty******************
+************************/
+#activity{
+  margin-top: 20px;
+  padding: 60px 120px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+section.activity .title {
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+section.activity .title h2{
+  font-size: 30px;
+  color:#007187 ;
+  border-bottom: 2px solid #004157;
+
+}
+section.activity .activities .media span{
+  color: #fff;
+  background-color: #007187;
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  border-radius: 2px;
+  text-align: center;
+  margin-left: 12px;
+  display: block !important;
+  font-size: 12px;
+}
+section.activity .activities{
+  margin-top: 50px;
+}
+section.activity .activities .media{
+  margin-bottom: 50px;
+}
+section.activity .activities .media-body h5{
+  font-size: 24px;
+  color: #004157;
+  margin-bottom: 12px;
+}
+section.activity .activities .media-body p{
+  font-size: 15px;
+    line-height: 20px;
+    color: #757474;
+}
+@media (max-width:992px) {
+  section.activity .activities .media span{
+    width: 50px;
+    height: 40px;
+    line-height: 50px;
+    font-size: 9px;
+    
+}
+section.activity .activities .media-body h5{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+section.activity .activities .media-body p{
+    font-size: 12px;
+    line-height: 15px;
+}
+}
+
+section.students{
+  background-image: url(../images/2340-2.jpg);
+  background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+ .overlay{
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  padding-top: 100px;
+}
+section.students .slider {
+  width: 55%;
+  margin: 0px auto 80px;
+}
+section.students .slider .carousel {
+  min-height: 250px;
+  color: #b1b1b1;
+}
+section.students .slider .carousel .carousel-item .carousel-caption {
+  background-color: #fff;
+  width: 95%;
+  height: 70%;
+  padding: 80px 70px 35px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+section.students .slider .carousel .carousel-item {
+  min-height: 350px;
+}
+section.students .slider .carousel .carousel-item .carousel-caption img {
+  position: absolute;
+  width: 120px;
+  top: -10px;
+  right: 50%;
+  transform: translate(50%,-50%);
+}
+section.students .slider .carousel .carousel-item .carousel-caption h3{
+  font-size: 30px;
+  color: #004157;
+  margin-bottom: 15px;
+}
+section.students .slider .carousel .carousel-item .carousel-caption p {
+  font-size: 20px;
+  line-height: 22px;
+  color: #007187;
+  margin-bottom: 25px;
+}
+section.students .slider .carousel .carousel-indicators li{
+  max-width: 15px;
+  height: 15px;
+  border: 1px solid #004157;
+  background-color: #ffffff;
+}
+section.students .slider .carousel .carousel-indicators li.active {
+  background-color: #004157;
+}
+section.students .slider .carousel .carousel-indicators{
+  padding-right: 0px;
+  margin: 0;
+  bottom: 12px;
+  
+}
+section.students .slider .carousel .carousel-control-prev,
+section.students .slider .carousel .carousel-control-next{
+    top: 50%;
+    bottom: auto;
+    width: auto;
+    color: #004157;
+    
+}
+section.students .slider .carousel .carousel-control-prev span,
+section.students .slider .carousel .carousel-control-next span {
+    padding: 10px 20px;
+    background-color: #001922;
+    border-radius: 50%;
+    font-size: 10px;
+}
+section.students .slider .carousel .carousel-control-prev {
+  transform: translate(60%);
+  z-index:2;
+}
+section.students .slider .carousel .carousel-control-next {
+  transform: translateX(40%);
+  z-index:2;
+}
+section.students .title{
+  margin-bottom: 35px;
+  padding-top: 60px;
+}
+section.students .title h2{
+  font-size: 30px;
+  color: #fff;
+  
+}
+
+/*****************
+top students *********
+**/
+section.topstudents{
+  background-color: #fff;
+}
+section.topstudents .title{
+  margin-bottom: 100px;
+  padding-top: 60px;
+}
+section.topstudents .title h2{
+  font-size: 30px;
+  color: #022c3b;
+}
+section.topstudents .card{
+  margin-bottom: 60px !important;
+  border-radius: 15px;
+  margin: auto;
+}
+section.topstudents .card .card-body h5{
+   font-size: 20px;
+   color: #007187;
+   font-weight: 700;
+   text-align: center;
+}
+section.topstudents .card .card-body p{
+  font-size: 17px;
+  color: #006a80;
+  text-align: center;
+}
+section.topstudents .card .card-body a{
+  background-color: #007187;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 25px;
+}
+section.topstudents .card .card-body a:hover{
+  background-color: #004e5e;
+  
+}
+
+
+/*****************
+contact***********
+******/
+section.contacts{
+  background-color: #171717;
+  padding: 75px 0;
+  text-align: right;
+}
+section.contacts .map{
+  margin-bottom: 30px;
+}
+section.contacts .title{
+  margin-bottom: 50px;
+}
+section.contacts .title h2{
+  font-size: 30px;
+  font-weight: 500;
+  color: #006e92;
+}
+section.contacts .info h3{
+  font-size: 24px;
+  line-height: 50px;
+  color: #006a80;
+  font-weight: bold;
+  margin-right: 60px;
+}
+section.contacts .info ul li {
+  font-size: 18px;
+  line-height: 25px;
+  color: #bcced146;
+  margin-bottom: 20px;
+  
+}
+section.contacts .info ul {
+  padding: 0;
+  margin-right: 60px;
+}
+footer .copyright {
+  background-color: #111111;
+}
+footer .copyright p {
+  font-size: 15px;
+  line-height: 78px;
+  color: #919191;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+/**********************************************
+***********************************************
+first page
+***********
+**********************************************/
+section.formation .title{
+  padding-top: 8px;
+  
+}
+section.formation .title h2{
+  color:#002633 ;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+section.formation .image img{
+  margin-bottom: 25px;
+  width: 45%;
+}
+section.formation{
+  background-color:#DCDEC7;
+  padding: 100px;
+  
+}
+section.formation h2{
+  color: #002633;
+  margin-bottom: 10px;
+}
+section.formation h2 span{
+  color:#184352;
+  
+}
+section.formation .age{
+  margin-right: 10px;
+}
+section.formation .hobi{
+  margin-right: 70px;
+}
+section.marks .title h2{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #011820;
+  font-size: 30px;
+}
+@media (max-width:518px) {
+  section.formation .hobi{
+    margin-right: 60px;
+  }
+}
+@media (min-width:500px) {
+  section.formation .hobi {
+    margin-right:50px;
+  }
+}
+section.marks{
+  background-image: url(../images/_106985422_7a.gettyimages-1019220334.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow-y: hidden !important;
+  
+}
+section.marks .title h2{
+  color: #fff;
+}
+section.marks .overlay{
+  background-color: rgba(25, 26, 19, 0.6) !important;
+  padding-top: 100px;
+}
+
+section.advices h3{
+  padding-top: 30px;
+  font-size: 30px;
+  color: #004157;
+  padding-bottom: 10px;
+}
+section.advices ul{
+  margin-bottom: 20px;
+}
+section.advices ul li{
+   font-size: 20px;
+   margin-bottom: 20px;
+   color: #006a80;
+}
+
+/***************
+second page******
+**/
+section.formations .title{
+  padding-top: 8px;
+  
+}
+section.formations .title h2{
+  color:#fff !important ;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+section.formations .image img{
+  margin-bottom: 25px;
+  width: 45%;
+}
+section.formations{
+  background-color:#242C3A;
+  padding: 100px;
+  
+}
+section.formations h2{
+  color: #847B77;
+  margin-bottom: 10px;
+}
+section.formations h2 span{
+  color:#b5c5ca;
+  
+}
+section.formations .age{
+  margin-right: 10px;
+}
+section.formations .hobi{
+  margin-right: 20px !important;
+}
+
+section.mark .title h2{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 30px;
+}
+section.mark{
+  background-image: url(../images/gtbilsstozx30_article.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden !important;
+  
+}
+section.mark .overlay{
+  background-color: rgba(5, 11, 32, 0.6) !important;
+  padding-top: 100px;
+
+}
+section.advice h3{
+  padding-top: 30px;
+  font-size: 30px;
+  color: #242C3A;
+  padding-bottom: 10px;
+}
+section.advice ul{
+  margin-bottom: 20px;
+}
+section.advice ul li{
+   font-size: 20px;
+   margin-bottom: 20px;
+   color: #282f3a;
+}
+
+/***************
+account page ****
+************/
+section.create{
+  background-color: #7ba3ac;
+}
+ section.create form{
+  text-align: center;
+  width: 55%;
+}
+section.create .title{
+  margin-bottom: 60px;
+  padding-top: 150px;
+}
+section.create .title h2{
+  color: #004157;
+  font-size: 30px;
+  font-weight: 700;
+}
+section.create .user{
+  margin-right: 200px !important;
+  
+}
+section.create .sign .email{
+  margin-right: 200px !important;
+  
+}
+section.create .sign .password1{
+  margin-right: 200px !important;
+}
+section.create .sign .password2{
+  margin-right: 200px !important;
+}
+section.create form .head{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #0a6a8d;
+}
+section.create form button{
+  margin-right: 100px !important;
+  transform: translateX(-50%);
+}
+section.create form button.new{
+  background-color: #104050 !important;
+  color: #fff !important;
+  
+}
+section.create form .selected{
+  margin-bottom: -30px;
+  
+}
+section.create form .create-account .new{
+ margin-right: -10px !important;
+  padding: 10px !important;
+  
+ width: 60%;
+}
+section.create form .create-account .have-account{
+  margin-top:15px !important ;
+
+}
+section.create form .create-account .have-account a{
+  font-size: 17px !important;
+  color:#fff !important;
+  margin-right: 90px !important;
+ 
+}
+section.create form .date{
+  margin-left: 100px !important;
+  text-align: center !important;
+}
+
+section.create form .error{
+  color: red !important;
+  display: block !important;
+}
+/************
+sign page ******
+*******/
+section.sign{
+  background-image: url(../images/1226.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden !important;
+}
+section.sign .overlay{
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  padding-top: 100px;
+}
+section.sign .title h2{
+  color: #fff !important;
+}
+section.sign form .create-account button.sign-in{
+  background-color: #0A3838  !important;
+  color: #fff !important;
+  
+}
+@media (max-width:546px) {
+  section.sign form .create-account button.sign-in{
+    margin-right: 50px !important;
+  }
+}
+/***********
+media*******
+*****/
+
+@media (max-width:1999px) {
+  section.create form .head{
+    transform: translateX(-45%);
+  }
+  section.create form .selected{
+    margin-right: 100px !important;
+    transform: translateX(-30%);
+  }
+}
+@media (max-width:991px) {
+  .navbar .account{
+    margin-bottom: 10px;
+  }
+  section.create form .create-account .new{
+    margin-right: 50px;
+  }
+  section.create form .date{
+     margin-right: -50px;
+   
+  }
+  section.create form .date .head{
+    margin-left: 30px;
+  }
+}
+@media (max-width:767px) {
+  section.create .user{
+    margin-right: 130px !important;
+    
+  }
+  section.create .sign .email{
+    margin-right: 130px !important;
+    
+  }
+  section.create .sign .password1{
+    margin-right: 130px !important;
+  }
+  section.create .sign .password2{
+    margin-right: 130px !important;
+  }
+  section.create form .selected{
+    margin-right: 60px !important;
+    transform: translateX(-30%);
+  }
+  section.create form .date .selected{
+    padding-right: 40px;
+  }
+  section.create form .date .selected select{
+  margin-left: -10px;
+    margin-right: -10px;
+    font-size: 10px;
+  
+ }
+ section.create form .create-account .new{
+  margin-left: 30px;
+ }
+ section.sign form .create-account button.sign-in{
+  margin-right: 50px !important;
+}
+}
+@media (min-width:500px) {
+  section.formations .hobi {
+    margin-right:0px !important;
+    margin-left: -20px !important;
+  }
 }

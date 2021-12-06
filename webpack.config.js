@@ -39,11 +39,28 @@ module.exports = {
               test:/\.css$/,
               use:[
                  
-                  MiniCssExtractPlugin.loader, 
-                  'css-loader'
+                {
+                    loader: MiniCssExtractPlugin.loader, 
+                    options: {
+                      publicPath: '../' 
+                    }
+                  },
+                  'css-loader',
               ]
           },
-      
+          {
+            test:/\.(svg|eot|woff|woff2|ttf)$/,
+            use:[
+              {
+                loader:"file-loader",
+                options:{
+                    name:'[name].[ext]',
+                    outputpath:"fonts",
+                
+                }
+              }
+            ]
+          },
       ]
 
     },
@@ -52,6 +69,22 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
+          }),
+          new HtmlWebpackPlugin({
+            filename: "first.html",
+            template: "./src/first.html",
+          }),
+          new HtmlWebpackPlugin({
+            filename: "second.html",
+            template: "./src/second.html",
+          }),
+          new HtmlWebpackPlugin({
+            filename: "account.html",
+            template: "./src/account.html",
+          }),
+          new HtmlWebpackPlugin({
+            filename: "sign.html",
+            template: "./src/sign.html",
           }),
           new MiniCssExtractPlugin({
             filename:"css/style.css"
