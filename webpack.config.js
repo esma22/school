@@ -36,17 +36,17 @@ module.exports = {
           },
         
           {
-              test:/\.css$/,
-              use:[
-                 
-                {
+            test: /\.(sa|sc|c)ss$/,
+            use: [
+                  {
                     loader: MiniCssExtractPlugin.loader, 
                     options: {
                       publicPath: '../' 
                     }
                   },
                   'css-loader',
-              ]
+                  'sass-loader'
+                ]
           },
           {
             test:/\.(svg|eot|woff|woff2|ttf)$/,

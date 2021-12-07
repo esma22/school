@@ -417,16 +417,7 @@ section.marks .title h2{
   color: #011820;
   font-size: 30px;
 }
-@media (max-width:518px) {
-  section.formation .hobi{
-    margin-right: 60px;
-  }
-}
-@media (min-width:500px) {
-  section.formation .hobi {
-    margin-right:50px;
-  }
-}
+
 section.marks{
   background-image: url(../images/_106985422_7a.gettyimages-1019220334.jpg);
   background-size: cover;
@@ -700,5 +691,15 @@ media*******
   section.formations .hobi {
     margin-right:0px !important;
     margin-left: -20px !important;
+  }
+}
+@media (max-width:518px) {
+  section.formation .hobi{
+    margin-right: 60px;
+  }
+}
+@media (min-width:500px) {
+  section.formation .hobi {
+    margin-right:50px;
   }
 }

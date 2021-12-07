@@ -1,0 +1,151 @@
+@import './variables';
+//first page //
+section.formation{
+    background-color:#DCDEC7;
+    padding: 100px;
+
+    .title{
+        padding-top: 8px;
+      }
+
+      .title h2{
+        color:#002633 ;
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      } 
+      .image img{
+        margin-bottom: 25px;
+        width: 45%;
+      }
+      h2{
+        color: #002633;
+        margin-bottom: 10px;
+      }
+      h2 span{
+        color:#184352;
+        
+      }
+      .age{
+        margin-right: 10px;
+      }
+      .hobi{
+        margin-right: 70px;
+      }
+   }
+  
+  section.marks{
+    background-image: url(../images/_106985422_7a.gettyimages-1019220334.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow-y: hidden !important;
+   
+    .title h2{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: #011820;
+        font-size: 30px;
+      }
+      .overlay{
+        background-color: rgba(25, 26, 19, 0.6) !important;
+        padding-top: 100px;
+      }
+      .title h2{
+        color: #fff;
+      }
+  }
+ 
+  section.advices {
+      h3{
+    padding-top: 30px;
+    font-size: 30px;
+    color: #004157;
+    padding-bottom: 10px;
+
+      }
+      ul{
+        margin-bottom: 20px;
+      }
+      ul li{
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #006a80;
+     }
+  }
+   
+  //second page //
+  section.formations {
+    background-color:#242C3A;
+    padding: 100px;
+      .title{
+    padding-top: 8px;
+    }
+    .title h2{
+    color:#fff !important ;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    }
+    .image img{
+        margin-bottom: 25px;
+        width: 45%;
+      }
+      h2{
+        color: #847B77;
+        margin-bottom: 10px;
+      }
+      h2 span{
+        color:#b5c5ca;
+        
+      }
+      .age{
+        margin-right: 10px;
+      }
+      .hobi{
+        margin-right: 20px !important;
+      }
+  }
+
+  section.mark{
+    background-image: url(../images/gtbilsstozx30_article.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden !important;
+
+    .title h2{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        color: #fff;
+        font-size: 30px;
+      }
+      .overlay{
+        background-color: rgba(5, 11, 32, 0.6) !important;
+        padding-top: 100px;
+      
+      }
+  }
+  
+  section.advice {
+      h3{
+    padding-top: 30px;
+    font-size: 30px;
+    color: #242C3A;
+    padding-bottom: 10px;
+  }
+  ul{
+    margin-bottom: 20px;
+  }
+  ul li{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #282f3a;
+ }
+}
+ 
+  
+    
+  
