@@ -16,7 +16,9 @@
     border-bottom: #eef0ea !important;
     background-color: #fff;
   }
-  
+  .navbar a.navbar-brand img{
+    width: 100px !important;
+  }
 .navbar .navbar-collapse ul li a{
   color: #007187;
   font-size: 15px;
