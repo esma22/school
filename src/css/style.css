@@ -17,7 +17,10 @@
     background-color: #fff;
   }
   .navbar a.navbar-brand img{
-    width: 100px !important;
+    width: 90px !important;
+    border-radius:50% !important;
+    color: #fff !important;
+    background-color:rgb(236, 235, 235) !important;
   }
 .navbar .navbar-collapse ul li a{
   color: #007187;
@@ -170,23 +173,6 @@ section.activity .activities .media-body p{
   font-size: 15px;
     line-height: 20px;
     color: #757474;
-}
-@media (max-width:992px) {
-  section.activity .activities .media span{
-    width: 50px;
-    height: 40px;
-    line-height: 50px;
-    font-size: 9px;
-    
-}
-section.activity .activities .media-body h5{
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-section.activity .activities .media-body p{
-    font-size: 12px;
-    line-height: 15px;
-}
 }
 
 section.students{
@@ -595,10 +581,7 @@ section.create form .date{
   text-align: center !important;
 }
 
-section.create form .error{
-  color: red !important;
-  display: block !important;
-}
+
 /************
 sign page ******
 *******/
@@ -621,11 +604,7 @@ section.sign form .create-account button.sign-in{
   color: #fff !important;
   
 }
-@media (max-width:546px) {
-  section.sign form .create-account button.sign-in{
-    margin-right: 50px !important;
-  }
-}
+
 /***********
 media*******
 *****/
@@ -638,6 +617,23 @@ media*******
     margin-right: 100px !important;
     transform: translateX(-30%);
   }
+}
+@media (max-width:992px) {
+  section.activity .activities .media span{
+    width: 50px;
+    height: 40px;
+    line-height: 50px;
+    font-size: 9px;
+    
+}
+section.activity .activities .media-body h5{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+section.activity .activities .media-body p{
+    font-size: 12px;
+    line-height: 15px;
+}
 }
 @media (max-width:991px) {
   .navbar .account{
@@ -688,6 +684,11 @@ media*******
  section.sign form .create-account button.sign-in{
   margin-right: 50px !important;
 }
+}
+@media (max-width:546px) {
+  section.sign form .create-account button.sign-in{
+    margin-right: 50px !important;
+  }
 }
 @media (min-width:500px) {
   section.formations .hobi {
