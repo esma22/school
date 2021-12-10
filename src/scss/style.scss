@@ -1,158 +1,27 @@
 @import './variables';
 @import './formation';
 @import './custom.scss';
+@import './mixins';
 //first page// 
-section.formation .title h2{
-    color:$brand-primary ;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-  section.formation h2{
-    color:$brand-primary ;
-    margin-bottom: 10px;
-  }
+section.formation {
+   @include formation-style($brand-primary);
+   
+}
+  
   //second page// 
   section.formations{
-    background-color:$brand-blue;
-    padding: 100px;
+  @include formation-style($brand-blue);
     
   }
   section.advice h3{
-    padding-top: 30px;
-    font-size: 30px;
-    color: $brand-blue;
-    padding-bottom: 10px;
+   @include formation-style($brand-blue);
   }
   
-  .navbar .navbar-collapse ul li a{
-    color: $brand-green;
-    font-size: 15px;
-    line-height: 40px;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    margin-left: 10px;
-  }
-  nav.navbar button.navbar-toggler span {
-    color: $brand-green !important;
-  }
-  section.activity .title h2{
-    font-size: 30px;
-    color:$brand-green ;
-    border-bottom: 2px solid $brand-navyblue;
-  
-  }
-  section.activity .activities .media span{
-    color: #fff;
-    background-color: $brand-green;
-    width: 60px;
-    height: 60px;
-    line-height: 70px;
-    border-radius: 2px;
-    text-align: center;
-    margin-left: 12px;
-    display: block !important;
-    font-size: 12px;
-  }
-  section.students .slider .carousel .carousel-item .carousel-caption p {
-    font-size: 20px;
-    line-height: 22px;
-    color: $brand-green;
-    margin-bottom: 25px;
-  }
-  section.topstudents .card .card-body h5{
-    font-size: 20px;
-    color: $brand-green;
-    font-weight: 700;
-    text-align: center;
- }
- section.topstudents .card .card-body a{
-    background-color: $brand-green;
-    color: #fff;
-    font-size: 15px;
-    border-radius: 25px;
-  }
-  .navbar .login
-{
-  color: #fff;
-  font-size: 15px;
-  line-height: 40px;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  border: 1px solid $brand-navyblue;
-  border-radius: 15px;
-  background-color: $brand-navyblue;
-}
-a:hover{
-    color: $brand-navyblue;
-  }
-  .navbar .account{
-    color: #fff;
-    font-size: 15px;
-    line-height: 40px;
-    padding-right: 15px !important;
-    padding-left: 25px !important;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    border: 1px solid $brand-navyblue;
-    border-radius: 15px;
-    background-color: $brand-navyblue;
-    margin-left: 10px;
-    
-  }
-  button{
-    background-color: transparent !important;
-    color: $brand-navyblue !important;
-    border-color: $brand-navyblue !important;
-  }
-  button:hover{
-    color: #fff !important;
-    background-color: $brand-navyblue !important;
-  }
-  .modal .modal-header .close:hover{
-    color: $brand-navyblue !important;
-    background-color: transparent !important;
-  }
-  section.activity .activities .media-body h5{
-    font-size: 24px;
-    color: $brand-navyblue;
-    margin-bottom: 12px;
-  }
-  section.students .slider .carousel .carousel-item .carousel-caption h3{
-    font-size: 30px;
-    color: $brand-navyblue;
-    margin-bottom: 15px;
-  }
-  section.students .slider .carousel .carousel-indicators li{
-    max-width: 15px;
-    height: 15px;
-    border: 1px solid $brand-navyblue;
-    background-color: #ffffff;
-  }
-  section.students .slider .carousel .carousel-indicators li.active {
-    background-color: $brand-navyblue;
-  }
-  section.students .slider .carousel .carousel-control-prev,
-section.students .slider .carousel .carousel-control-next{
-    top: 50%;
-    bottom: auto;
-    width: auto;
-    color: $brand-navyblue;
-    
-}
-section.advices h3{
+section.advices {
+   h3{
     padding-top: 30px;
     font-size: 30px;
     color: $brand-navyblue;
     padding-bottom: 10px;
   }
-  section.create .title h2{
-    color: $brand-navyblue;
-    font-size: 30px;
-    font-weight: 700;
-  }
+}

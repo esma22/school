@@ -9,11 +9,23 @@ import '@fortawesome/fontawesome-free/js/all.min';
 import 'jquery-validation/dist/jquery.validate.min.js';
 import 'jquery-validation/dist/localization/messages_ar.min.js';
 
-
 $(document).ready(function(){
-    $(function (){
-        $("#commentForm").validate();
-      });
+  if ($(this).scrollTop() >= 200) {
+    $("#navBar").addClass("noTransparent");
+  } else {
+    $("#navBar").removeClass("noTransparent");
+  }
+  $("a.scroll").on('click', function(event) {
+       var hash = this.hash;
+
+       $('html, body').animate({scrollTop: $(hash).offset().top -30}, 800, function(){});
+   
+   });
+   $(function (){
+    $("#commentForm").validate();
+  });
+});
+$(document).ready(function(){
 });
 console.log("مرحبا بك فى مدرسة علمنى");
 
