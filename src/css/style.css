@@ -745,6 +745,21 @@ section.activity .activities .media-body p{
    
   }
 }
+@media (max-width:575px) {
+body{
+  margin-left: -20px;
+}
+#carouselExampleIndicators .carousel-control-prev{
+  font-size: 20px;
+  border: none;
+  top: 40px;
+}
+#carouselExampleIndicators .carousel-control-next{
+  font-size: 20px;
+  border: none;
+  top: 43px;
+}
+}
 @media (max-width:546px) {
   section.sign form .create-account button.sign-in{
     margin-right: 50px !important;
