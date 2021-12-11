@@ -741,8 +741,11 @@ section.activity .activities .media-body p{
 @media (max-width:550px) {
   #carouselExampleIndicators .carousel-inner .carousel-item img{
     height: 600px !important;
-    width: 1000px !important;
+    
    
+  }
+  .row{
+    margin-left: 0px;
   }
 }
 @media (max-width:575px) {
@@ -759,6 +762,10 @@ body{
   border: none;
   top: 43px;
 }
+  .row{
+    margin-right: -60px;
+    margin-left: 0px !important;
+  }
 }
 @media (max-width:546px) {
   section.sign form .create-account button.sign-in{
@@ -770,6 +777,7 @@ body{
     margin-right:0px !important;
     margin-left: -20px !important;
   }
+  
 }
 @media (max-width:518px) {
   section.formation .hobi{
@@ -781,3 +789,4 @@ body{
     margin-right:50px;
   }
 }
+
